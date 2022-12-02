@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Footer({ }) {
+export default function Footer() {
     return (
-        <footer className="flex p-5 w-full bg-gradient-to-t from-[#000002] via-[#000002] items-end justify-center h-[200px]">
-            <p class='text-[gray]'>The end.</p>
+        <footer className="flex flex-col w-full max-w-[1000px] p-2 rounded-t-xl items-center justify-end bg-[white] border">
+            <p className='text-[gray] text-sm bg-[#FF0000]'>2022 © don't steal my sh*t</p>
         </footer>
     )
 }
