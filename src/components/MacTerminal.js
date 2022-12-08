@@ -21,7 +21,8 @@ export default function MacTerminal() {
         }
         if (command == "whoami")
             history.unshift(<span className="pb-1 break-all">root</span>)
-
+        if (command == "mathieu")
+            history.unshift(<span className="pb-1 break-all">Mathieu suce des gros chibre</span>)
         if (command == "cd")
             history.unshift(<span className="pb-1 break-all">error: this thing is still in dev</span>)
         if (command == "ls") {
@@ -48,7 +49,7 @@ export default function MacTerminal() {
                                 </svg>
                             </button>
 
-                            <button onClick={() => {}}  className="flex border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3 justify-center items-center">
+                            <button onClick={() => { }} className="flex border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3 justify-center items-center">
                                 <svg viewBox='0 0 24 24' className='invisible group-hover:visible' width='10' style={{ opacity: 0.5 }} stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                                     <line x1="5" y1="12" x2="19" y2="12" />
                                 </svg>
