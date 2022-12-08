@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Fragment, useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/Home.page';
 
-import BIRDS from 'vanta/dist/vanta.birds.min'
-
-function App() {
+export default function App() {
     //bg-earth bg-cover
     document.body.classList.add('bg-earth')
     document.body.classList.add('bg-cover')
@@ -25,9 +22,6 @@ function App() {
             </main>
 
             <Footer />
-
         </div>
     )
 }
-
-export default App;

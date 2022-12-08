@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ANIMATION from 'vanta/dist/vanta.net.min'
-import EducationSection from '../components/education.cv'
-import SkillsSection from '../components/skills.cv'
-import ExperienceSection from '../components/experience.cv'
-import OtherSection from '../components/other.cv'
+import EducationSection from '../components/Education.cv'
+import SkillsSection from '../components/Skills.cv'
+import ExperienceSection from '../components/Experience.cv'
+import OtherSection from '../components/Other.cv'
 import MacTerminal from '../components/MacTerminal'
 import CommentsSection from '../components/CommentSection'
 import RandomQuotes from '../components/RandomQuotes'
@@ -13,6 +13,7 @@ import GithubButton from '../components/GithubButton'
 import CvButton from '../components/CvButton'
 import * as THREE from "three";
 import pfp from '../assets/pepe.jpg'
+import SpotifyWidget from '../components/SportifyWidget'
 
 function AnimBg({ children }) {
     const [vantaEffect, setVantaEffect] = useState(null)
@@ -54,18 +55,18 @@ export default function HomePage() {
     return (
         <div className="max-w-[1000px] flex flex-col lg:flex-row gap-3">
             <div className='gap-2 min-h-[100px] w-full rounded-xl shadow-md bg-[#1a253f]'>
-
                 <div className='rounded-t-xl relative flex flex-col bg-[#1a253f]'>
                     <AnimBg />
                     <div className="flex flex-col md:flex-row gap-6 p-4 z-20">
                         <div className="flex gap-5 justify-between">
-                            <img className="rounded-lg overflow-hidden min-w-[150px] min-h-[150px] max-w-[150px] md:max-w-[230px]" src={pfp} />
+                            <img className="rounded-lg overflow-hidden min-w-[150px] min-h-[150px] max-w-[170px] md:max-w-[230px]" src={pfp} />
                             <div className="flex flex-col gap-5 grow justify-between md:hidden">
                                 <CvButton />
                                 <GithubButton />
                                 <LinkedinButton />
                             </div>
                         </div>
+
                         <div className='flex flex-col justify-between'>
                             <div>
                                 <h1 className="hover:animate-spin mb-3 text-5xl md:text-[40px] w-fit font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Samuel Palmer</h1>
@@ -91,19 +92,17 @@ export default function HomePage() {
                         <SkillsSection />
                         <ExperienceSection />
                     </div>
-
                     <div className="md:flex">
                         <EducationSection />
                         <OtherSection />
                     </div>
                 </div>
-
             </div>
 
             <div className='flex flex-col gap-2 lg:w-[400px]'>
                 <MacTerminal />
                 <RandomQuotes />
-
+                {/* <SpotifyWidget /> */}
                 <CommentsSection />
                 <UsefullLinks />
             </div>

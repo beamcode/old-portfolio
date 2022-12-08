@@ -26,7 +26,7 @@ export default function SkillsSection() {
                         </h3>
                     </div>
 
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Development of various projects including responsive web-apps and mobile apps (dashboads, landing pages, statistics mobile apps) using the React library.</p>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Development of various projects including responsive web-apps (dashboards, landing pages) and mobile apps using the React library.</p>
                 </li>
 
                 <li className="mb-6 ml-4">
