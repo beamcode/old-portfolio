@@ -3,7 +3,7 @@ import React from 'react'
 export default function CoolLinks() {
     return (
         <div className='flex flex-col shadow-md w-full items-center bg-[white] border-opacity-30 rounded-md'>
-            <h1 className="p-2 text-md bg-[#1a253f] text-white font-bold w-full text-center rounded-t-md">Cool Links</h1>
+            <h1 className="p-2 text-md bg-[#1a253f] text-white font-bold w-full text-center rounded-md">Cool Links</h1>
 
             <div className="flex p-5 flex-col grow rounded-md w-full">
                 <a className="text-[blue] hover:text-[orange] underline" target="_blank" href="https://www.youtube.com/watch?v=FNoVD-ljVBM">Tokyo in 1993</a>
