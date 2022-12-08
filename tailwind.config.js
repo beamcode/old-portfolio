@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'earth': "url('/src/assets/background.png')",
+        'earth': "url('/src/assets/background.jpeg')",
       }
     },
   },
