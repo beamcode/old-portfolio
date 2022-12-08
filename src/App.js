@@ -17,7 +17,7 @@ function App() {
     // document.body.classList.add('bg-[#ebf0f6]')
 
     return (
-        <div className='lg:mx-0 mx-[50px] gap-6 flex flex-col items-center justify-center'>
+        <div className='lg:mx-0 mx-[10px] gap-6 flex flex-col items-center justify-center'>
             <Navbar />
 
             <main>
