@@ -71,8 +71,8 @@ export default function HomePage() {
                             <div>
                                 <h1 className="hover:animate-spin mb-3 text-5xl md:text-[40px] w-fit font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Samuel Palmer</h1>
                                 <p className="text-[#BBBCBA] mb-3">
-                                    I am a 22-year-old 4th year student at EPITECH Paris. I'm studying about software development and learning new technologies like robotics, embedded development and tech design.
-                                    I am pationate about travel and exploration. Check out my github!
+                                    I am a 22-year-old 4th year student at EPITECH Paris. I'm studying software development and learning new technologies like robotics, embedded development and tech design.
+                                    I am deeply interested in traveling and exploring new destinations. Check out my github!
                                 </p>
                             </div>
                             <div className="hidden md:flex gap-2 h-[45px] justify-between w-full">
