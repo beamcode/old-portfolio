@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/Home.page';
+
+import BIRDS from 'vanta/dist/vanta.birds.min'
 
 function App() {
     //bg-earth bg-cover

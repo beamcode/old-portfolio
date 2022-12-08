@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function GithubButton() {
-    return (
-        <button className="w-fit h-fit group flex gap-2 justify-center items-center relative bg-[#2a2a2b] cursor-pointer overflow-hidden px-2 py-1 rounded-lg">
+    return (        
+        <a className="w-fit h-fit group flex gap-2 justify-center items-center relative bg-[#2a2a2b] cursor-pointer overflow-hidden px-2 py-1 rounded-lg" href="https://github.com/beamcode">
             <div className="w-6 h-6 bg-[white] rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
                     aria-describedby="desc" role="img">
@@ -15,6 +16,6 @@ export default function GithubButton() {
             </div>
             <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
             <h1 className="text-white text-md">Github</h1>
-        </button>
+        </a>
     )
 }
