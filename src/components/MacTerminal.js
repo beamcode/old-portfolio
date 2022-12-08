@@ -7,6 +7,7 @@ export default function MacTerminal() {
     const [cleared, setCleared] = useState(false)
     const [command, setCommand] = useState('')
     const [history, setHistory] = useState([])
+    const timeDate = moment().format("ddd MMM D HH:mm:ss")
 
     const commands = {
         whoami: "jackharper",
@@ -90,7 +91,7 @@ export default function MacTerminal() {
                                     {history.map((val) => val)}
                                 </div>
 
-                                {!cleared && <p className="pb-1">Last login: {moment().format("ddd MMM D HH:mm:ss")} on ttys002</p>}
+                                {!cleared && <p className="pb-1">Last login: {timeDate} on ttys002</p>}
                             </div>
 
                         </div>
