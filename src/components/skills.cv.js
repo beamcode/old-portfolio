@@ -141,7 +141,7 @@ export default function SkillsSection() {
 
                     </div>
 
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Linux, bash scripting, GNU utils, nginx, nodejs. Proficient in Unix-like systems and Linux environments.</p>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Linux, bash scripting, GNU utils, Nginx, nodeJS. Proficient in Unix-like systems and Linux environments.</p>
                 </li>
 
                 <li className="mb-6 ml-4">
