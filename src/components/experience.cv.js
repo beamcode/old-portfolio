@@ -24,7 +24,7 @@ export default function ExperienceSection() {
                             </span>
                     </div>
                     <time className="block mb-2 text-sm font-normal leading-none text-gray-600">Apr - Aug 2022</time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Four-month internship working with ReactJS, ReactNative, and web development projects. I gained experience in team work and mobile development. Excellent learning opportunity that helped me grow as a developer.</p>
                 </li>
 
                 <li className="mb-6 ml-4">
