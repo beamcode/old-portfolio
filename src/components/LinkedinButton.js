@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LinkedinButton() {
     return (
-        <a href="https://www.linkedin.com/in/samuel-palmer-3547b4230/" className="group h-full flex gap-2 justify-center items-center relative bg-[#0A66C2] cursor-pointer overflow-hidden px-2 py-1 rounded-lg">
+        <a href="https://www.linkedin.com/in/samuel-palmer-3547b4230/" target="_blank" className="group h-full flex gap-2 justify-center items-center relative bg-[#0A66C2] cursor-pointer overflow-hidden px-2 py-1 rounded-lg">
             <div className="w-6 h-6 bg-[white] rounded-full">
                 <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fillRule="evenodd">

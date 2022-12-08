@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function GithubButton() {
     return (        
-        <a className="group flex h-full gap-2 justify-center items-center relative bg-[#2a2a2b] cursor-pointer overflow-hidden px-2 py-1 rounded-lg" href="https://github.com/beamcode">
+        <a className="group flex h-full gap-2 justify-center items-center relative bg-[#2a2a2b] cursor-pointer overflow-hidden px-2 py-1 rounded-lg" target="_blank" href="https://github.com/beamcode">
             <div className="w-6 h-6 bg-[white] rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
                     aria-describedby="desc" role="img">
