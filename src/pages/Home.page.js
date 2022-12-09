@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
-import ANIMATION from 'vanta/dist/vanta.net.min'
+import React from 'react'
 import EducationSection from '../components/Education.cv'
 import SkillsSection from '../components/Skills.cv'
 import ExperienceSection from '../components/Experience.cv'
@@ -11,52 +10,16 @@ import UsefullLinks from '../components/CoolLinks'
 import LinkedinButton from '../components/LinkedinButton'
 import GithubButton from '../components/GithubButton'
 import CvButton from '../components/CvButton'
-import * as THREE from "three";
 import pfp from '../assets/pepe.jpg'
 import SpotifyWidget from '../components/SportifyWidget'
-
-function AnimBg({ children }) {
-    const [vantaEffect, setVantaEffect] = useState(null)
-    const myRef = useRef(null)
-
-    useEffect(() => {
-        if (!vantaEffect) {
-            setVantaEffect(ANIMATION({
-                el: myRef.current,
-                THREE: THREE,
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                color: '#50649c',
-                backgroundColor: '#1a253f',
-                spacing: 23.00,
-                points: 11.00,
-                maxDistance: 30.00,
-                showDots: true,
-            }))
-        }
-        return () => {
-            if (vantaEffect) vantaEffect.destroy()
-        }
-    }, [vantaEffect])
-
-    return (
-        <div className='rounded-t-xl z-10 overflow-hidden absolute w-full h-full' ref={myRef}>
-            {children}
-        </div>
-    )
-}
+import AnimBg from '../components/VantaBackground'
 
 export default function HomePage() {
     return (
         <div className="max-w-[1000px] flex flex-col lg:flex-row gap-3">
-            <div className='gap-2 min-h-[100px] w-full rounded-xl shadow-md bg-[#1a253f]'>
-                <div className='rounded-t-xl relative flex flex-col bg-[#1a253f] shadow-xl'>
-                    <AnimBg />
+            <div className='flex flex-col gap-4 min-h-[100px] w-full rounded-xl shadow-md'>
+                <div className='rounded-xl relative flex flex-col bg-[white] shadow-xl'>
+                    {/* <AnimBg className='rounded-t-xl z-10 overflow-hidden absolute w-full h-full'/> */}
                     <div className="flex flex-col md:flex-row gap-6 p-4 z-20">
                         <div className="flex gap-5 justify-between">
                             <img className="rounded-lg overflow-hidden min-w-[150px] min-h-[150px] max-w-[170px] md:max-w-[230px]" src={pfp} />
@@ -84,10 +47,10 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full h-[10px] mb-[-0.3px] z-20 bg-gradient-to-b from-transparent to-white" />
+                    {/* <div className="w-full h-[10px] mb-[-0.3px] z-20 bg-gradient-to-b from-transparent to-white" /> */}
                 </div>
 
-                <div className='p-4 pt-0 bg-white rounded-b-xl relative'>
+                <div className='p-4 pt-0 bg-white rounded-xl relative'>
                     <div className="md:flex">
                         <SkillsSection />
                         <ExperienceSection />

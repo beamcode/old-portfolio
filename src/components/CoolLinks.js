@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CoolLinks() {
     return (
-        <div className='flex flex-col shadow-md w-full items-center bg-[white] border-opacity-30 rounded-md'>
+        <div className='flex flex-col shadow-md w-full items-center bg-[white] rounded-md'>
             <h1 className="p-2 text-md bg-[#1a253f] text-white font-bold w-full text-center rounded-md">Cool Links</h1>
 
             <div className="flex p-5 flex-col grow rounded-md w-full">
