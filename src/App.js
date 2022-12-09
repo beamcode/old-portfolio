@@ -14,8 +14,8 @@ export default function App() {
     // document.body.classList.add('bg-[#ebf0f6]')
 
     return (
-        <div className='lg:mx-0 mx-[10px] gap-6 flex flex-col items-center justify-center'>
-            <Navbar />
+        <div className='lg:mx-0 pt-[10px] lg:pt-[60px] mx-[10px] gap-6 flex flex-col items-center justify-center'>
+            {/* <Navbar /> */}
 
             <main>
                 <HomePage />
