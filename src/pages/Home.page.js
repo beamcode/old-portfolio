@@ -45,7 +45,7 @@ function AnimBg({ children }) {
     }, [vantaEffect])
 
     return (
-        <div className='rounded-t-xl overflow-hidden absolute w-full h-full' ref={myRef}>
+        <div className='rounded-t-xl z-10 overflow-hidden absolute w-full h-full' ref={myRef}>
             {children}
         </div>
     )
@@ -55,7 +55,7 @@ export default function HomePage() {
     return (
         <div className="max-w-[1000px] flex flex-col lg:flex-row gap-3">
             <div className='gap-2 min-h-[100px] w-full rounded-xl shadow-md bg-[#1a253f]'>
-                <div className='rounded-t-xl relative flex flex-col bg-[#1a253f]'>
+                <div className='rounded-t-xl relative flex flex-col bg-[#1a253f] shadow-xl'>
                     <AnimBg />
                     <div className="flex flex-col md:flex-row gap-6 p-4 z-20">
                         <div className="flex gap-5 justify-between">
