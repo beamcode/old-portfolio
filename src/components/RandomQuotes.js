@@ -34,7 +34,7 @@ export default function RandomQuotes() {
     }
 
     return (
-        <div className='flex flex-col min-h-[300px] w-full h-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-md overflow-hidden'>
+        <div className='relative flex flex-col min-h-[300px] w-full h-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-md overflow-hidden'>
             <h1 className="p-2 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white rounded-t-md font-bold w-full text-center">Quotes</h1>
             <div className="grow overflow-y-scroll mx-6 relative items-center justify-center">
                 <div className='absolute flex flex-col gap-4 w-full h-fit pr-2 pb-10 pt-4'>
@@ -42,7 +42,14 @@ export default function RandomQuotes() {
                     <h1 className='dark:text-gray-200'>- {quotes[counter].author}</h1>
                 </div>
             </div>
-            <button onClick={() => next()} className="bg-[gray] dark:bg-gray-700 active:bg-[orange] dark:active:bg-gray-800 justify-center h-[40px] rounded-lg mx-2 mb-2 shadow text-white dark:text-white">New quote</button>
+            <button onClick={() => next()} className="absolute flex w-fit h-fit opacity-30 group hover:opacity-100 transition duration-90 bottom-0 right-0 p-2 justify-center bg-[gray] dark:bg-gray-700 active:bg-[orange] dark:active:bg-gray-800 rounded-lg mx-4 mb-4 shadow text-white dark:text-white">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width={22} viewBox="0 0 799 751">
+                    <g className='group-active:opacity-20 transition duration-90' transform="translate(0, 751) scale(0.1,-0.1)" fill="#FFFFFF" stroke="none">
+                        <path d="M4095 7493 c-534 -20 -1053 -152 -1517 -384 -625 -313 -1101 -736 -1491 -1326 -55 -84 -104 -153 -108 -153 -4 0 -9 190 -11 423 -5 395 -6 426 -26 487 -27 82 -64 141 -131 206 -164 161 -399 177 -600 43 -72 -48 -122 -113 -167 -217 l-34 -77 0 -1006 c0 -958 1 -1008 19 -1060 48 -139 130 -238 248 -296 71 -35 80 -37 216 -44 198 -11 1619 -10 1804 0 171 10 209 22 302 94 71 54 124 123 150 192 92 247 -4 497 -236 612 l-77 38 -165 7 c-92 3 -239 7 -328 7 -92 1 -164 5 -168 11 -9 15 29 82 141 250 127 191 241 327 387 464 345 324 724 543 1153 667 155 45 371 87 499 99 142 13 419 13 565 0 197 -18 494 -87 706 -165 234 -86 543 -262 754 -431 109 -87 357 -334 445 -444 215 -270 388 -598 489 -931 89 -295 123 -574 112 -927 -28 -900 -497 -1719 -1278 -2232 -134 -88 -379 -213 -522 -265 -216 -79 -512 -148 -716 -166 -186 -17 -564 -6 -715 21 -600 105 -1112 368 -1530 785 -225 225 -391 457 -535 750 -93 188 -124 270 -191 494 -51 171 -86 237 -163 308 -150 139 -353 168 -538 76 -184 -92 -280 -287 -250 -506 11 -80 104 -386 164 -537 109 -274 288 -599 451 -815 354 -470 770 -834 1242 -1087 441 -237 838 -364 1343 -428 173 -23 617 -28 818 -10 630 56 1278 299 1819 684 301 213 650 564 873 876 340 475 578 1079 659 1670 26 192 26 815 0 1000 -52 371 -161 738 -323 1090 -349 760 -1005 1421 -1776 1790 -358 171 -758 289 -1135 335 -109 14 -503 37 -543 33 -8 -1 -46 -3 -85 -5z" />
+                    </g>
+                </svg>
+
+            </button>
         </div>
     )
 }

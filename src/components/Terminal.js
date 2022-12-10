@@ -15,20 +15,27 @@ export default function MacTerminal() {
     }
 
     function checkCommands() {
+        var toAdd = []
+
+        toAdd.push(<span className="pb-1 break-all">Beam:Devprojects beam$ {command}</span>)
         if (command == "clear" || command == "cl") {
             setHistory([])
+            setCommand('')
             setCleared(true)
+            return
         }
-        if (command == "whoami")
-            history.unshift(<span className="pb-1 break-all">root</span>)
-        if (command == "mathieu")
-            history.unshift(<span className="pb-1 break-all">Mathieu suce des gros chibre</span>)
-        if (command == "cd")
-            history.unshift(<span className="pb-1 break-all">error: this thing is still in dev</span>)
-        if (command == "ls") {
-            history.unshift(<span className="pb-1 break-all whitespace-pre">secret_stuff   archive.zip   docs</span>)
-            history.unshift(<span className="pb-1 break-all whitespace-pre">pics           sshkeys</span>)
+        else if (command == "whoami")
+            toAdd.push(<span className="pb-1 break-all">root</span>)
+        else if (command == "mathieu")
+            toAdd.push(<span className="pb-1 break-all">Mathieu suce des gros chibre</span>)
+        else if (command == "cd")
+            toAdd.push(<span className="pb-1 break-all">error: this thing is still in dev</span>)
+        else if (command == "ls") {
+            toAdd.push(<span className="pb-1 break-all whitespace-pre">secret_stuff   archive.zip   docs</span>)
+            toAdd.push(<span className="pb-1 break-all whitespace-pre">pics           sshkeys</span>)
         }
+        setCommand('')
+        setHistory([...toAdd.reverse(), ...history])
     }
 
     return (
@@ -68,8 +75,8 @@ export default function MacTerminal() {
 
                     </div>
                     <div className="flex w-full shadow-2xl subpixel-antialiased rounded-b-lg h-64 border-black mx-auto bg-[black] bg-opacity-70">
-                        <div className="flex pl-1 pt-1 text-green-200 font-mono overflow-y-scroll text-xs">
-                            <div className='flex flex-col-reverse overflow-y-scroll h-fit'>
+                        <div className="flex pl-1 pt-1 text-green-200 font-mono overflow-y-scroll text-xs w-full">
+                            <div className='flex flex-col-reverse overflow-y-scroll h-fit w-full'>
                                 <div className='flex shrink'>
                                     <span className="pb-1 whitespace-pre">Beam:Devprojects beam$ </span>
                                     <input
@@ -79,17 +86,14 @@ export default function MacTerminal() {
                                         value={command}
                                         onChange={e => setCommand(e.target.value)}
                                         onKeyDown={(evt) => {
-                                            if (evt.code == "Enter") {
-                                                setCommand('')
-                                                history.unshift(<span className="pb-1 break-all">Beam:Devprojects beam$ {command}</span>)
+                                            if (evt.code == "Enter")
                                                 checkCommands()
-                                            }
                                         }}
                                         required />
                                 </div>
 
-                                <div className='flex flex-col-reverse w-fit max-w-[300px]'>
-                                    {history.map((val) => val)}
+                                <div className='flex flex-col-reverse w-fit'>
+                                    {history.map((val, key) => <div key={key}>{val}</div>)}
                                 </div>
 
                                 {!cleared && <p className="pb-1">Last login: {timeDate} on ttys002</p>}
