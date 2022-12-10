@@ -42,7 +42,7 @@ export default function HomePage() {
                             <div>
                                 <div className='w-full flex justify-between'>
                                     <h1 className="mb-3 text-5xl md:text-[40px] w-fit font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Samuel Palmer</h1>
-                                    <button onClick={() => setMode()} aria-label="Toggle Dark Mode" type="button" class="w-9 h-9 bg-gray-200 rounded-lg dark:bg-[#444444] flex items-center justify-center hover:ring-2 ring-gray-300 transition-all">
+                                    <button onClick={() => setMode()} aria-label="Toggle Dark Mode" type="button" class="min-w-9 min-h-9 bg-gray-200 rounded-lg dark:bg-[#444444] flex items-center justify-center hover:ring-2 ring-gray-300 transition-all">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-5 h-5 dark:hidden">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                                         </svg>
