@@ -10,7 +10,7 @@ import UsefullLinks from '../components/Links'
 import LinkedinButton from '../components/LinkedinButton'
 import GithubButton from '../components/GithubButton'
 import CvButton from '../components/CvButton'
-import pfp from '../assets/pepe.jpg'
+import pfp from '../assets/placeholder.jpg'
 import SpotifyWidget from '../components/SportifyWidget'
 import AnimBg from '../components/VantaBackground'
 
@@ -81,7 +81,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-2 lg:w-[400px]'>
+            <div className='flex flex-col gap-4 lg:gap-2 lg:w-[400px]'>
                 <MacTerminal />
                 <RandomQuotes />
                 {/* <SpotifyWidget /> */}
