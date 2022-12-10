@@ -6,13 +6,11 @@ import HomePage from './pages/Home.page';
 import AnimBg from './components/VantaBackground';
 
 export default function App() {
-
     // document.body.classList.add('bg-earth')
-    document.body.classList.add('bg-cover')
-    document.body.classList.add('bg-fixed')
+    // document.body.classList.add('bg-cover')
+    // document.body.classList.add('bg-fixed')
+    // document.body.classList.add('min-w-fit')
     document.body.classList.add('bg-[black]')
-    document.body.classList.add('min-w-fit')
-    document.body.classList.add('bg-[#ebf0f6]')
     document.documentElement.classList.add('dark')
 
     return (
