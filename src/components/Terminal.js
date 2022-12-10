@@ -3,6 +3,7 @@ import moment from 'moment'
 import { ReactTerminal } from "react-terminal";
 
 export default function MacTerminal() {
+    const [extend, setExtend] = useState(false)
     const [show, setShow] = useState(true)
     const [cleared, setCleared] = useState(false)
     const [command, setCommand] = useState('')
@@ -46,23 +47,23 @@ export default function MacTerminal() {
                 />
             </div> */}
             {show &&
-                <div className="w-full lg:max-w-[282px]">
-                    <div className="flex items-center h-6 rounded-t-lg bg-gray-100 dark:bg-[#322b2b] border-b border-gray-500 text-center text-black">
-                        <div className='flex gap-[6px] ml-[6px] mt-[2px] group'>
-                            <button onClick={() => setShow(false)} className="flex border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3 justify-center items-center">
-                                <svg viewBox='0 0 24 24' className='invisible group-hover:visible' width='9' style={{ opacity: 0.5 }} stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <div className={`flex flex-col w-full min-h-[256px] ${extend && 'h-full'} lg:max-w-[282px]`}>
+                    <div className="flex items-center h-fit px-[6px] py-[2px] rounded-t-lg bg-gray-100 dark:bg-[#322b2b] border-b border-gray-500 text-center text-black">
+                        <div className='flex gap-[6px] group'>
+                            <button onClick={() => setShow(val => !val)} className="relative flex border-red-900 bg-red-500 shadow-inner rounded-full w-[10px] h-[10px] justify-center items-center">
+                                <svg viewBox='0.15 -0.05 25 25' className='invisible group-hover:visible absolute' width='8.5px' style={{ opacity: 0.5 }} stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                                     <line x1="18" y1="6" x2="6" y2="18" />
                                     <line x1="6" y1="6" x2="18" y2="18" />
                                 </svg>
                             </button>
 
-                            <button onClick={() => { }} className="flex border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3 justify-center items-center">
+                            <button onClick={() => {}} className="flex border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-[10px] h-[10px] justify-center items-center">
                                 <svg viewBox='0 0 24 24' className='invisible group-hover:visible' width='10' style={{ opacity: 0.5 }} stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                                     <line x1="5" y1="12" x2="19" y2="12" />
                                 </svg>
                             </button>
 
-                            <div className="flex border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3 justify-center items-center">
+                            <div onClick={() => setExtend(val => !val)} className="flex border-green-900 bg-green-500 shadow-inner rounded-full w-[10px] h-[10px] justify-center items-center">
                                 <svg viewBox='0 0 24 24' className='invisible group-hover:visible' width='5' style={{ opacity: 0.5 }} >
                                     <path d="M0,17.45V2.64A2.64,2.64,0,0,1,2.64,0h14.8a.56.56,0,0,1,.4,1L.93,17.84A.55.55,0,0,1,0,17.45Z" />
                                     <path d="M21.35,24H6.56a.56.56,0,0,1-.4-.95L23.07,6.16a.55.55,0,0,1,.93.39v14.8A2.64,2.64,0,0,1,21.35,24Z" />
@@ -74,7 +75,7 @@ export default function MacTerminal() {
                         </div>
 
                     </div>
-                    <div className="flex w-full shadow-2xl subpixel-antialiased rounded-b-lg h-64 border-black mx-auto bg-[black] bg-opacity-70">
+                    <div className='w-full h-full grow shadow-2xl subpixel-antialiased rounded-b-lg mx-auto bg-[black] bg-opacity-70'>
                         <div className="flex pl-1 pt-1 text-green-200 font-mono overflow-y-scroll text-xs w-full">
                             <div className='flex flex-col-reverse overflow-y-scroll h-fit w-full'>
                                 <div className='flex shrink'>
@@ -106,4 +107,3 @@ export default function MacTerminal() {
         </>
     )
 }
-//Wed Sep 25 09:11:04
