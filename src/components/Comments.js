@@ -8,7 +8,7 @@ export default function CommentsSection() {
             <h1 className="p-2 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white font-bold w-full rounded-t-md text-center">Comments</h1>
 
             <div className="flex h-full w-full grow overflow-y-scroll items-center justify-center">
-                <h1 className='text-[white] bg-[#a81111] p-2 rounded-xl font-bold'>Offline for now... sorry</h1>
+                <h1 className='text-[white] bg-[#a81111] p-2 rounded font-bold'>Offline</h1>
             </div>
 
             <div className="flex w-full h-fit">

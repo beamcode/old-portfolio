@@ -57,7 +57,7 @@ export default function HomePage() {
                                     I am deeply interested in traveling and exploring new destinations. Check out my github!
                                 </p>
                             </div>
-                            <div className="hidden md:flex gap-2 h-[45px] justify-between w-full">
+                            <div className="hidden md:flex gap-2 h-[35px] justify-between w-full">
                                 <CvButton />
                                 <div className='flex gap-4 md:gap-2'>
                                     <GithubButton />
