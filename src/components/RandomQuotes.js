@@ -27,7 +27,6 @@ export default function RandomQuotes() {
     const [counter, setCounter] = useState(Math.floor(Math.random() * quotes.length))
 
     function next() {
-        console.log('t')
         if (counter >= quotes.length - 1)
             setCounter(0)
         else
@@ -43,7 +42,7 @@ export default function RandomQuotes() {
                     <h1 className='dark:text-gray-200'>- {quotes[counter].author}</h1>
                 </div>
             </div>
-            <button onClick={() => next()} className="bg-[gray] dark:bg-gray-600 active:bg-[orange] justify-center h-[40px] rounded-lg mx-2 mb-2 shadow text-white dark:text-white">New quote</button>
+            <button onClick={() => next()} className="bg-[gray] dark:bg-gray-700 active:bg-[orange] dark:active:bg-gray-800 justify-center h-[40px] rounded-lg mx-2 mb-2 shadow text-white dark:text-white">New quote</button>
         </div>
     )
 }
