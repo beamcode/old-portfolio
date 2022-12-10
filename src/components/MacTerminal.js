@@ -40,7 +40,7 @@ export default function MacTerminal() {
             </div> */}
             {show &&
                 <div className="w-full lg:max-w-[282px]">
-                    <div className="flex items-center h-6 rounded-t-lg bg-gray-100 border-b border-gray-500 text-center text-black">
+                    <div className="flex items-center h-6 rounded-t-lg bg-gray-100 dark:bg-[#322b2b] border-b border-gray-500 text-center text-black">
                         <div className='flex gap-[6px] ml-[6px] mt-[2px] group'>
                             <button onClick={() => setShow(false)} className="flex border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3 justify-center items-center">
                                 <svg viewBox='0 0 24 24' className='invisible group-hover:visible' width='9' style={{ opacity: 0.5 }} stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -63,7 +63,7 @@ export default function MacTerminal() {
                             </div>
                         </div>
                         <div className="mx-auto pr-16">
-                            <p className="text-center text-sm">Terminal</p>
+                            <p className="text-center text-sm font-bold dark:text-[#736c6c]">Terminal</p>
                         </div>
 
                     </div>

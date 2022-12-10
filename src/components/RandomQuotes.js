@@ -24,7 +24,6 @@ const quotes = [
 ]
 
 export default function RandomQuotes() {
-
     const [counter, setCounter] = useState(Math.floor(Math.random() * quotes.length))
 
     function next() {
@@ -36,15 +35,15 @@ export default function RandomQuotes() {
     }
 
     return (
-        <div className='flex flex-col min-h-[300px] w-full h-full max-h-[400px] shadow-md bg-[white] rounded-md overflow-hidden'>
-            <h1 className="p-2 text-md bg-[#1a253f] rounded-md text-white font-bold w-full text-center">Random Quotes I like</h1>
+        <div className='flex flex-col min-h-[300px] w-full h-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-md overflow-hidden'>
+            <h1 className="p-2 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white rounded-t-md font-bold w-full text-center">Quotes</h1>
             <div className="grow overflow-y-scroll mx-6 relative items-center justify-center">
                 <div className='absolute flex flex-col gap-4 w-full h-fit pr-2 pb-10 pt-4'>
-                    <q className="italic text-gray-600">{quotes[counter].quote}</q>
-                    <h1>- {quotes[counter].author}</h1>
+                    <q className="italic text-gray-600 dark:text-gray-400">{quotes[counter].quote}</q>
+                    <h1 className='dark:text-gray-200'>- {quotes[counter].author}</h1>
                 </div>
             </div>
-            <button onClick={() => next()} className="bg-[orange] justify-center h-[40px] rounded-lg mx-2 mb-2 shadow">New quote</button>
+            <button onClick={() => next()} className="bg-[gray] dark:bg-gray-600 active:bg-[orange] justify-center h-[40px] rounded-lg mx-2 mb-2 shadow text-white dark:text-white">New quote</button>
         </div>
     )
 }
