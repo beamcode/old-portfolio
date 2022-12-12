@@ -5,7 +5,7 @@ export default function CommentsSection() {
 
     return (
         <div className='flex flex-col shadow-md min-h-[270px] w-full items-center bg-[white] dark:bg-[#181A1B] border-opacity-30 rounded-md overflow-hidden'>
-            <h1 className="p-2 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white font-bold w-full rounded-t-md text-center">Comments</h1>
+            <h1 className="p-2 py-1.5 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white font-bold w-full rounded-t-md text-center">Comments</h1>
 
             <div className="flex h-full w-full grow overflow-y-scroll items-center justify-center">
                 <h1 className='text-[white] bg-[#a81111] p-2 rounded font-bold'>Offline</h1>
