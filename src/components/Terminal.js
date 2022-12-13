@@ -75,12 +75,12 @@ export default function MacTerminal() {
                                 </svg>
                             </div>
                         </div>
-                        <div className="mx-auto pr-16">
+                        <div className="mx-auto pr-[45px]">
                             <p className="text-center text-sm font-bold dark:text-[#736c6c]">Terminal</p>
                         </div>
                     </div>
 
-                    <div className='relative flex grow shadow-2xl subpixel-antialiased rounded-b-lg bg-[black] bg-opacity-70 overflow-y-scroll'>
+                    <div className='relative flex grow shadow-2xl subpixel-antialiased rounded-b-lg bg-[#242423] dark:bg-[black] bg-opacity-70 overflow-y-scroll'>
                         <div className='absolute p-1 flex flex-col-reverse text-green-200 font-mono text-xs overflow-y-scroll h-fit w-full'>
                             <div className='flex shrink'>
                                 <span className="pb-1 whitespace-pre">Beam:Devprojects beam$ </span>

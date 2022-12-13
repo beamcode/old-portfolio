@@ -10,7 +10,7 @@ import UsefullLinks from '../components/Links'
 import LinkedinButton from '../components/LinkedinButton'
 import GithubButton from '../components/GithubButton'
 import CvButton from '../components/CvButton'
-import pfp from '../assets/placeholder.jpg'
+import pfp from '../assets/pfp.png'
 import SpotifyWidget from '../components/SportifyWidget'
 import AnimBg from '../components/VantaBackground'
 
@@ -24,7 +24,7 @@ export default function HomePage() {
     }
 
     return (
-        <div className="max-w-[1000px] flex flex-col lg:flex-row gap-3">
+        <div className="max-w-[1000px] flex flex-col lg:flex-row gap-4">
             <div className='flex flex-col gap-4 min-h-[100px] w-full rounded-xl shadow-md'>
                 <div className='rounded-xl relative flex flex-col bg-white dark:bg-[#181A1B] shadow-xl'>
                     {/* <AnimBg className='rounded-t-xl z-10 overflow-hidden absolute w-full h-full'/> */}
@@ -81,9 +81,9 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-4 lg:gap-2 lg:w-[400px]'>
-                <MacTerminal />
+            <div className='flex flex-col gap-4 lg:gap-5 lg:w-[400px]'>
                 <RandomQuotes />
+                <MacTerminal />
                 {/* <SpotifyWidget /> */}
                 <CommentsSection />
                 <UsefullLinks />

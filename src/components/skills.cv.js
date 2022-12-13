@@ -157,7 +157,7 @@ export default function SkillsSection() {
                             <path fill="#FFF" d="M19.172,24h-4.36l-1.008,3H11l4.764-13h2.444L23,27h-2.805L19.172,24z M15.444,22h3.101l-1.559-4.714L15.444,22z" />
                         </svg>
                         <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-gray-200 whitespace-pre">
-                            Fluent in
+                            Bilingual in
                         </h3>
                         <h3 className='text-lg font-semibold text-[#e32d3d] whitespace-pre'>
                             English

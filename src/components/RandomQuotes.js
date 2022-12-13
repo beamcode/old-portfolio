@@ -20,6 +20,10 @@ const quotes = [
     {
         quote: "Hey man, quick little reminder before you actually passout tonight, like you did a good job today. A really good job. Don't worry about no bullshit that came through, the day is done. Pack it up, get some rest, you deserve it. But remember this before you actually go to sleep. You're worth it. Everything you've done, everything you're going to do, everyone's fucking proud of you. I'm proud of you. So just know you did good today, all right? Love.",
         author: "@itsclaveriia"
+    },
+    {
+        quote: "The more you fuck around the more you find out.",
+        author: ""
     }
 ]
 
@@ -34,7 +38,7 @@ export default function RandomQuotes() {
     }
 
     return (
-        <div className='relative flex flex-col min-h-[300px] w-full h-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-md overflow-hidden'>
+        <div className='relative flex flex-col h-[300px] lg:h-[400px] w-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-md overflow-hidden'>
             <h1 className="p-2 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white rounded-t-md font-bold w-full text-center">Quotes</h1>
             <div className="grow overflow-y-scroll p-6 pt-4 relative items-center justify-center">
                 <div className='flex flex-col gap-4 mb-[50px]'>

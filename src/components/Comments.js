@@ -13,7 +13,7 @@ export default function CommentsSection() {
 
             <div className="flex w-full h-fit">
                 <input
-                    className="w-full text-sm p-[10px] h-fit bg-[#f0f0f0] dark:bg-[#202325] dark:placeholder-[#676662] focus:outline-none resize-none"
+                    className="w-full text-sm p-[10px] h-fit bg-[#f0f0f0] dark:bg-[#202325] dark:placeholder-[#676662] focus:outline-none resize-none dark:text-white"
                     placeholder="Type a message..."
                     name="msg"
                     value = {message}
