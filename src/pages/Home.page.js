@@ -10,7 +10,7 @@ import UsefullLinks from '../components/Links'
 import LinkedinButton from '../components/LinkedinButton'
 import GithubButton from '../components/GithubButton'
 import CvButton from '../components/CvButton'
-import pfp from '../assets/pfp.png'
+import pfp from '../assets/pfp.jpg'
 import SpotifyWidget from '../components/SportifyWidget'
 import AnimBg from '../components/VantaBackground'
 
