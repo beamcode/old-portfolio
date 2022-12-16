@@ -39,7 +39,7 @@ export default function RandomQuotes() {
 
     return (
         <div className='relative flex flex-col h-[300px] lg:h-[400px] w-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-md overflow-hidden'>
-            <h1 className="p-2 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white rounded-t-md font-bold w-full text-center">Quotes</h1>
+            <h1 className="p-2 py-1.5 text-md bg-[#e3e3e3] dark:bg-[#322b2b] dark:text-white font-bold w-full rounded-t-md text-center">Quotes</h1>
             <div className="grow overflow-y-scroll p-6 pt-4 relative items-center justify-center">
                 <div className='flex flex-col gap-4 mb-[50px]'>
                     <q className="italic text-gray-600 dark:text-gray-400">{quotes[counter].quote}</q>
