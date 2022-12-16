@@ -18,11 +18,11 @@ const quotes = [
         author: "@james.ck.lim"
     },
     {
-        quote: "Hey man, quick little reminder before you actually passout tonight, like you did a good job today. A really good job. Don't worry about no bullshit that came through, the day is done. Pack it up, get some rest, you deserve it. But remember this before you actually go to sleep. You're worth it. Everything you've done, everything you're going to do, everyone's fucking proud of you. I'm proud of you. So just know you did good today, all right? Love.",
+        quote: "Hey man, quick little reminder before you actually passout tonight, like you did a good job today. A really good job. Don't worry about no stupid things that came through, the day is done. Pack it up, get some rest, you deserve it. But remember this before you actually go to sleep. You're worth it. Everything you've done, everything you're going to do, everyone's really proud of you. I'm proud of you. So just know you did good today, all right? Love.",
         author: "@itsclaveriia"
     },
     {
-        quote: "The more you fuck around the more you find out.",
+        quote: "The more you mess around the more you find out.",
         author: ""
     }
 ]
