@@ -23,7 +23,7 @@ const quotes = [
     },
     {
         quote: "The more you mess around the more you find out.",
-        author: ""
+        author: "unknown"
     }
 ]
 
