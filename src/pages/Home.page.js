@@ -81,13 +81,13 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-4 lg:gap-5 lg:w-[400px]'>
+            {/* <div className='flex flex-col gap-4 lg:gap-5 lg:w-[400px]'>
                 <RandomQuotes />
                 <MacTerminal />
-                {/* <SpotifyWidget /> */}
+                <SpotifyWidget />
                 <CommentsSection />
                 <UsefullLinks />
-            </div>
+            </div> */}
         </div >
     )
 }
