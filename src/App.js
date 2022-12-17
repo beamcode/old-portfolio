@@ -17,7 +17,7 @@ export default function App() {
     return (
         <>
             <AnimBg className='fixed top-0 left-0 z-[-10] w-full h-full' />
-            <div className='lg:mx-0 pt-[10px] lg:pt-[60px] mx-[10px] gap-6 flex flex-col items-center justify-center'>
+            <div className='pt-[10px] lg:pt-[60px] mx-4 lg:mx-0 gap-6 flex flex-col items-center justify-center'>
                 {/* <Navbar /> */}
                 
                 <main>
