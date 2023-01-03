@@ -19,7 +19,7 @@ export default function EducationSection() {
                         <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-gray-200">
                             Epitech (Nancy)
                         </h3>
-                        <span className="bg-blue-100 dark:bg-[#2a2e30] text-blue-800 dark:text-[#6aa2e6] text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                        <span className="bg-blue-100 dark:bg-[#2a2e30] text-blue-800 dark:text-[#6aa2e6] text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
                             Latest
                         </span>
                     </div>

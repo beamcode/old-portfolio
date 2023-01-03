@@ -27,7 +27,7 @@ export default function HomePage() {
         <div className="max-w-[1000px] flex flex-col lg:flex-row gap-4">
             <div className='flex flex-col gap-4 min-h-[100px] w-full rounded-xl shadow-md'>
                 <div className='rounded-xl relative flex flex-col bg-white dark:bg-[#181A1B] shadow-xl'>
-                    {/* <AnimBg className='rounded-t-xl z-10 overflow-hidden absolute w-full h-full'/> */}
+
                     <div className="flex flex-col md:flex-row gap-6 p-4 z-20">
                         <div className="flex gap-5 justify-between">
                             <img className="rounded-lg overflow-hidden min-w-[150px] min-h-[150px] max-w-[170px] md:max-w-[230px]" src={pfp} />
