@@ -69,7 +69,7 @@ export default function HomePage() {
                     {/* <div className="w-full h-[10px] mb-[-0.3px] z-20 bg-gradient-to-b from-transparent to-white" /> */}
                 </div>
 
-                <div className='p-4 pt-0 bg-white dark:bg-[#181A1B] rounded-xl relative'>
+                <div className='p-3 pt-0 bg-white dark:bg-[#181A1B] rounded-xl relative'>
                     <div className="md:flex">
                         <SkillsSection />
                         <ExperienceSection />

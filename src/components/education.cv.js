@@ -28,7 +28,7 @@ export default function EducationSection() {
                         <ul>
                             <li>• Information Technology Expert Title</li>
                             <li>• Master's Degree, learning by practice through projects</li>
-                            <li>• 1 years of studying in Tokyo as an exchange student</li>
+                            <li>• 1 year of studying in Tokyo as an exchange student</li>
                         </ul>
                     </div>
                 </li>
