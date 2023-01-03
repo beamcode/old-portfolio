@@ -24,8 +24,9 @@ export default function HomePage() {
     }
 
     return (
-        <div className="max-w-[1000px] flex flex-col lg:flex-row gap-4">
-            <div className='flex flex-col gap-4 min-h-[100px] w-full rounded-xl shadow-md'>
+        <div className="max-w-[1000px] flex flex-col w-full overflow-hidden lg:flex-row gap-4 pt-[15px] lg:pt-[40px]">
+
+            <div className='flex flex-col gap-4 min-h-[100px] rounded-xl shadow-md mx-4 md:mx-0'>
                 <div className='rounded-xl relative flex flex-col bg-white dark:bg-[#181A1B] shadow-xl'>
 
                     <div className="flex flex-col md:flex-row gap-6 p-4 z-20">
@@ -65,11 +66,10 @@ export default function HomePage() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* <div className="w-full h-[10px] mb-[-0.3px] z-20 bg-gradient-to-b from-transparent to-white" /> */}
+                    </div> 
                 </div>
 
-                <div className='p-3 pt-0 bg-white dark:bg-[#181A1B] rounded-xl relative'>
+                <div className='flex flex-col px-4 bg-white dark:bg-[#181A1B] rounded-xl relative'>
                     <div className="md:flex">
                         <SkillsSection />
                         <ExperienceSection />

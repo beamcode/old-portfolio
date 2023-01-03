@@ -47,7 +47,7 @@ export default function ExperienceSection() {
                     </div>
 
                     <time className="block mb-2 text-sm font-normal leading-none text-gray-600 dark:text-[#b1aaa0]">April 2017</time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Internship abroad motoryacht SIROCCO as an asistant engineer. Learning of basic engineering and computer systems abroad a large vessel.</p>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Internship onbroad private 50m motoryacht SIROCCO as an asistant engineer. Learning of basic engineering and computer systems onbroad.</p>
                 </li>
             </ol>
         </div>
