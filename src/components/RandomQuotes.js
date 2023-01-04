@@ -38,7 +38,7 @@ export default function RandomQuotes() {
     }
 
     return (
-        <div className='relative flex flex-col min-h-[300px] max-h-[300px] w-full max-h-[400px] shadow-md bg-[white] dark:bg-[#181A1B] rounded-xl overflow-hidden'>
+        <div className='relative flex flex-col min-h-[300px] max-h-[300px] w-full shadow-md bg-[white] dark:bg-[#181A1B] rounded-xl overflow-hidden'>
             <h1 className="p-2 pt-2.5 text-md dark:text-white font-bold w-full text-center">Quotes</h1>
             <div className="grow overflow-y-scroll p-6 pt-0 relative items-center justify-center">
                 <div className='flex flex-col gap-4 mb-[50px]'>
