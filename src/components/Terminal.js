@@ -52,7 +52,7 @@ export default function MacTerminal() {
                 />
             </div> */}
             {show &&
-                <div className={`flex flex-col w-full min-h-[256px] ${extend && 'h-full'} lg:max-w-[282px] rounded-lg`}>
+                <div className={`flex flex-col w-full min-h-[256px] ${extend && 'h-full'} rounded-lg`}>
                     <div className="flex items-center h-fit px-[6px] py-[2px] rounded-t-lg bg-gray-100 dark:bg-[#322b2b] border-b border-gray-500 text-center text-black">
                         <div className='flex gap-[6px] group'>
                             <button onClick={() => setShow(val => !val)} className="relative flex border-red-900 bg-red-500 shadow-inner rounded-full w-[10px] h-[10px] justify-center items-center">

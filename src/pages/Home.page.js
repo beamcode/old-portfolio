@@ -24,9 +24,9 @@ export default function HomePage() {
     }
 
     return (
-        <div className="max-w-[1000px] flex flex-col w-full overflow-hidden lg:flex-row gap-4 pt-[15px] lg:pt-[40px]">
+        <div className="max-w-[1000px] flex flex-col w-full overflow-hidden lg:flex-row gap-4 pt-[15px] lg:pt-[40px] mx-4 lg:mx-0">
 
-            <div className='flex flex-col gap-4 min-h-[100px] rounded-xl shadow-md mx-4 md:mx-0'>
+            <div className='flex flex-col gap-4 min-h-[100px] rounded-xl shadow-md'>
                 <div className='rounded-xl relative flex flex-col bg-white dark:bg-[#181A1B] shadow-xl'>
 
                     <div className="flex flex-col md:flex-row gap-6 p-4 z-20">
@@ -81,13 +81,13 @@ export default function HomePage() {
                 </div>
             </div>
 
-            {/* <div className='flex flex-col gap-4 lg:gap-5 lg:w-[400px]'>
+            <div className='flex flex-col gap-4 lg:max-w-[300px] lg:min-w-[300px]'>
                 <RandomQuotes />
-                <MacTerminal />
-                <SpotifyWidget />
-                <CommentsSection />
                 <UsefullLinks />
-            </div> */}
+                <MacTerminal />
+                {/* <CommentsSection /> */}
+            </div>
         </div >
     )
 }
+//<SpotifyWidget />
