@@ -55,7 +55,7 @@ export default function HomePage() {
 
                                 <p className="text-[#BBBCBA] mb-3">
                                     I am a 22-year-old 4th year student at EPITECH Paris. I'm studying software development and learning new technologies like robotics, embedded development and tech design.
-                                    I am deeply interested in traveling and exploring new destinations. Check out my github!
+                                    I am deeply interested in traveling and exploring new destinations. Check out my Github!
                                 </p>
                             </div>
                             <div className="hidden md:flex gap-2 h-[35px] justify-between w-full">
