@@ -170,7 +170,7 @@ export default function SkillsSection() {
                         </h3>
                     </div>
 
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Fluent in writing and speaking in both English and French.</p>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Fluent in both spoken and written English and French.</p>
                 </li>
             </ol>
         </div >
