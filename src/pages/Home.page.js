@@ -81,12 +81,12 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-4 lg:max-w-[300px] lg:min-w-[300px]'>
+            {/* <div className='flex flex-col gap-4 lg:max-w-[300px] lg:min-w-[300px]'>
                 <RandomQuotes />
                 <UsefullLinks />
                 <MacTerminal />
-                {/* <CommentsSection /> */}
-            </div>
+                <CommentsSection />
+            </div> */}
         </div >
     )
 }
